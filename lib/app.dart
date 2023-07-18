@@ -17,7 +17,8 @@ class App extends StatelessWidget {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
           theme: yaru.theme,
-          darkTheme: yaru.darkTheme,
+          darkTheme: yaru.darkTheme
+              ?.copyWith(scaffoldBackgroundColor: const Color(0xFF2b2b2b)),
           home: const Home(),
         );
       },
